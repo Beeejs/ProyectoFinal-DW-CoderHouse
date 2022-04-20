@@ -176,13 +176,15 @@ text-transform:uppercase;
 }
 
 .inicio .inicio-content .text-1{
+-webkit-text-stroke: 1px #b18c73;
+color: transparent;
 letter-spacing: 25px;
 font-size: 40px;
 font-weight: 700;
 margin: 50px 0;
 font-family: 'Shadows Into Light', cursive;
-
 }
+
 
 
 .inicio .inicio-content .text-2{
@@ -1095,6 +1097,28 @@ font-size: 18px;
 width: 100%;
 }
 
+.inicio .inicio-content .text-1 {
+animation: relleno 5s ease-in-out infinite;
+}
+
+@keyframes relleno{
+0%{transform:translateY(-10px);
+    
+}
+30%{transform:translateY(10px);
+}
+50%{transform:translateY(-10px) rotateY(180deg) skewX(180deg);
+    opacity: 0;
+}
+75%{transform:translateY(10px);
+    opacity: 1;
+}
+100%{transform:translateY(-10px);
+    
+}
+
+}
+    
     
 .img-inicio{
 display: none;
