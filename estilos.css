@@ -79,7 +79,7 @@ margin-top:20px;
 font-family: 'Bebas Neue', cursive;
 z-index: 10000;
 background-color: #7d7573;
-padding: 20px 0!important;
+padding: 20px 0!important; /* Utilice el important ya que tiene como predeterminado padding-top: 0.5rem padding-bottom: 0.5rem; y al utilizar el padding si que se aplica pero no lo 20px en su totalidad (8px)*/
 }
 
 
@@ -93,7 +93,7 @@ box-shadow: 2px 0px 15px #111;
 
 
 .navbar-nav .nav-link{
-color: #fff !important;
+color: #fff !important;/* Utilice el important ya que si no lo pongo el color predeterminado seria negro y me pisa el blanco*/
 font-family: 'Hurricane', cursive;
 font-size: 40px;
 font-weight: 500;
@@ -101,7 +101,7 @@ margin: 0 20px;
 }
 
 .navbar-nav .nav-link.active{
-color: #444 !important;
+color: #444 !important;/* Utilice el important ya que si no lo pongo el color blanco me pisa al gris*/
 font-weight: 800;
 }
 
@@ -528,17 +528,17 @@ text-transform: uppercase;
 .accordion-button{
 font-family: 'Permanent Marker', cursive;
 text-transform: uppercase;
-font-size: 20px !important;
+font-size: 20px !important;/* Utilice el important ya que si no lo pongo el size predeterminado de 1rem me pisa los 20px*/
 }
 
 
 .accordion-button:not(.collapsed) {
-color: #7d7573!important;
+color: #7d7573!important;/* Utilice el important ya que si no lo pongo el color blanco me pisa el #7d7573*/
 font-weight: 700;
 }
 
 .accordion-button:focus{
-box-shadow: 0px 0px 6px 4px #b18c73 !important;
+box-shadow: 0px 0px 6px 4px #b18c73 !important; /* Utilice el important ya que su color predeterminado es el azul y me pisaba el color #b18c7*/
 }
 
 .accordion-body p{
@@ -1532,7 +1532,7 @@ padding: 20px 0;
 }
 
 .accordion-button{
-font-size: 18px !important;
+font-size: 18px !important;/* Utilice el important ya que si no lo pongo el size de 20px me pisa los 18px*/
 }
 } 
 
