@@ -69,32 +69,10 @@ margin-top:20px;
 
 
 
-/*Navegacion Con GRID*/
-.grid-padre{
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-/* NAV GRID */
-.grid-nav{ 
-grid-area: 1 / 1 / 2 / 6;
-}
-
-/* FOOTER GRID */
-.grid-footer1{
-grid-area: 1 / 1 / 6 / 6;  
-}
-
-/* SECTIONS GRID */
-.grid-item-sctions{
-grid-area: 1 / 1 / 6 / 6;   
-}
 
 
 
+/* Navegación */
 
 
 .navbar{
