@@ -1,0 +1,210 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+/* COMPONENTS */
+/* VARIABLES COLORES */
+/* VARIABLES FONTS */
+.navbar {
+  z-index: 10000;
+  background-color: #7d7573;
+  padding: 20px 0 !important;
+  /* Utilice el important ya que tiene como predeterminado padding-top: 0.5rem padding-bottom: 0.5rem; y al utilizar el padding si que se aplica pero no lo 20px en su totalidad (8px)*/ }
+  .navbar .logo {
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+    box-shadow: 2px 0px 15px #111; }
+  .navbar .navbar-nav .nav-link {
+    color: #fff !important;
+    /* Utilice el important ya que si no lo pongo el color predeterminado seria negro y me pisa el blanco*/
+    font-family: "Hurricane", cursive;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 20px; }
+  .navbar .navbar-nav .nav-link.active {
+    color: #444 !important;
+    /* Utilice el important ya que si no lo pongo el color blanco me pisa al gris*/
+    font-weight: 800; }
+  .navbar .navbar-nav li a::after {
+    content: '';
+    height: 7px;
+    width: 30%;
+    background-color: #b18c73;
+    display: block;
+    transition: all 0.3s ease; }
+  .navbar .navbar-nav li:hover a::after {
+    content: '';
+    height: 7px;
+    width: 100%;
+    background-color: #fff;
+    display: block; }
+
+.navbar-expand-lg .navbar-collapse {
+  display: flex;
+  justify-content: center; }
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .navbar {
+    display: block; }
+    .navbar .logo {
+      margin-left: 10px; }
+  .navbar-expand-lg .navbar-collapse {
+    display: block;
+    text-align: center; } }
+
+@media (max-width: 992px) {
+  .navbar .navbar-nav li a::after {
+    width: 100%; }
+  .navbar .navbar-nav li:hover a::after {
+    height: 4px;
+    width: 80%; } }
+
+@media (max-width: 668px) {
+  .navbar .logo {
+    margin-left: 0px;
+    /* justificar Sass */ } }
+
+@media (max-width: 500px) {
+  .navbar .logo {
+    width: 130px;
+    /* justificar Sass */
+    height: 130px;
+    /* justificar Sass */ } }
+
+.inicio {
+  display: flex;
+  background-color: #222;
+  height: 100vh; }
+  .inicio-content {
+    margin: auto 0 auto 60px;
+    color: #fff;
+    text-transform: uppercase; }
+    .inicio-content .text-1 {
+      -webkit-text-stroke: 1px #b18c73;
+      color: transparent;
+      letter-spacing: 25px;
+      font-size: 40px;
+      font-weight: 700;
+      margin: 50px 0;
+      font-family: "Shadows Into Light", cursive; }
+    .inicio-content .text-2 {
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: 10px;
+      font-family: "Shadows Into Light", cursive; }
+    .inicio-content .text-3 p {
+      font-size: 20px;
+      margin: 30px 0;
+      margin-right: 50px;
+      text-transform: none;
+      font-family: "Permanent Marker", cursive; }
+    .inicio-content a {
+      font-family: "Shadows Into Light", cursive;
+      display: inline-block;
+      font-size: 16px;
+      color: #fff !important;
+      /* Utilice important ya que al hacer el efecto hover me mostraba un color azul y me pisaba el blanco */
+      padding: 20px 30px;
+      background-color: #b18c73;
+      border: 8px solid #111;
+      cursor: pointer;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      background-image: linear-gradient(#7d7573, rgba(17, 17, 17, 0.418));
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      background-position-x: left;
+      transition: background-size 0.8s ease; }
+      .inicio-content a:hover {
+        background-size: 100% 100%; }
+  .inicio .img-inicio {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    height: 600px;
+    margin-top: 50px;
+    border: 30px double #444;
+    animation: a-galeria 5s ease-in-out infinite; }
+
+@keyframes a-galeria {
+  0% {
+    transform: translateY(-20px); }
+  30% {
+    transform: translateY(20px); }
+  50% {
+    transform: translateY(-20px) rotateY(180deg) skewX(5deg); }
+  75% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY(-20px); } }
+
+/* Responsive */
+@media (max-width: 1750px) {
+  .inicio-content {
+    margin: auto 0 auto 30px; }
+    .inicio-content .text-1 {
+      letter-spacing: 10px; }
+    .inicio-content .text-2 {
+      letter-spacing: 3px; }
+  .inicio .img-inicio {
+    right: 5%; } }
+
+@media (max-width: 1450px) {
+  .inicio-content .text-1 {
+    letter-spacing: 5px; }
+  .inicio-content .text-2 {
+    letter-spacing: 0px; }
+  .inicio-content .text-3 p {
+    font-size: 18px;
+    width: 80%; }
+  .inicio .img-inicio {
+    right: 2%;
+    height: 500px; } }
+
+@media (max-width: 1100px) {
+  .inicio-content .text-1 {
+    animation: relleno 5s ease-in-out infinite; }
+  @keyframes relleno {
+    0% {
+      transform: translateY(-10px); }
+    30% {
+      transform: translateY(10px); }
+    50% {
+      transform: translateY(-10px) rotateY(180deg);
+      opacity: 0; }
+    75% {
+      transform: translateY(10px);
+      opacity: 1; }
+    100% {
+      transform: translateY(-10px); } }
+  .inicio-content .text-3 p {
+    width: 100%; }
+  .inicio .img-inicio {
+    display: none; } }
+
+@media (max-width: 668px) {
+  .inicio-content .text-1 {
+    font-size: 30px;
+    letter-spacing: 5px; }
+  .inicio-content .text-2 {
+    font-size: 20px;
+    letter-spacing: 0px; }
+  .inicio-content .text-3 p {
+    font-size: 16px; }
+  .inicio-content a {
+    font-size: 12px;
+    padding: 20px 20px; } }
+
+@media (max-width: 425px) {
+  .inicio-content {
+    margin: auto 0 auto 10px; } }
+
+@media (max-width: 375px) {
+  .inicio-content .text-1 {
+    font-size: 25px;
+    letter-spacing: 5px; }
+  .inicio-content .text-2 {
+    font-size: 18px; } }

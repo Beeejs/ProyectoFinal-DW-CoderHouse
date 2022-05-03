@@ -1,0 +1,130 @@
+.navbar{
+z-index: 10000;
+background-color: $color-secundario;
+padding: 20px 0!important;/* Utilice el important ya que tiene como predeterminado padding-top: 0.5rem padding-bottom: 0.5rem; y al utilizar el padding si que se aplica pero no lo 20px en su totalidad (8px)*/
+
+    .logo{
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+    box-shadow: 2px 0px 15px $-negro;
+    }
+
+    .navbar-nav{
+
+        .nav-link{
+        color: $-blanco !important;/* Utilice el important ya que si no lo pongo el color predeterminado seria negro y me pisa el blanco*/
+        font-family: $font-principal;
+        font-size: 40px;
+        font-weight: 500;
+        margin: 0 20px;
+        }
+
+        .nav-link.active{
+        color: $-color-general !important;/* Utilice el important ya que si no lo pongo el color blanco me pisa al gris*/
+        font-weight: 800;
+        }
+
+
+        li a::after{
+        content: '';
+        height: 7px;
+        width: 30%;
+        background-color: $color-principal;
+        display: block;
+        transition: all 0.3s ease;
+        }
+
+        li:hover a::after{
+        content: '';
+        height: 7px;
+        width: 100%;
+        background-color: $-blanco;
+        display: block;
+        }
+    }
+
+    
+
+}
+
+
+.navbar-expand-lg {
+
+    .navbar-collapse{
+    display: flex;
+    justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+
+@media (max-width:1100px){
+.navbar{
+display: block;
+
+    .logo{
+    margin-left: 10px;
+    }
+}
+
+
+.navbar-expand-lg {
+
+    .navbar-collapse{
+    display: block;
+    text-align: center;
+    }
+}
+}
+
+
+
+
+
+
+@media (max-width:992px){
+.navbar{
+    .navbar-nav{
+        li a::after{
+        width: 100%;
+        }
+    
+    
+        li:hover a::after{
+        height: 4px;
+        width: 80%;
+        }
+    }
+}
+
+}
+
+
+
+@media (max-width:668px){  
+.navbar{
+
+    .logo{
+    margin-left: 0px;/* justificar Sass */
+    }
+}
+   
+}
+
+@media (max-width:500px){
+.navbar{   
+    .logo{
+    width: 130px;/* justificar Sass */
+    height: 130px;/* justificar Sass */
+    }
+}
+
+}
