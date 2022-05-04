@@ -1,12 +1,15 @@
-/* VARIABLES COLORES */
-$color-principal:#b18c73;
-$color-secundario:#7d7573;
-$-blanco:#fff;
-$-negro:#111;
-$-gris:#222;
-$-color-general:#444;   
+/* VARIABLES*/
+/* MAP-COLORES */
+$colores:(
+color-principal:#b18c73,
+color-secundario:#7d7573,
+color-general:#444,
+-blanco:#fff,
+-negro:#111,
+-gris:#222
+);
 
-/* VARIABLES FONTS */
+/* VARIABLES-FONTS */
 $font-principal:'Hurricane', cursive;
 $font-secundario:'Permanent Marker', cursive;
 $font-general:'Shadows Into Light', cursive;

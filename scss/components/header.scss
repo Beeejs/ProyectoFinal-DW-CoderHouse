@@ -1,19 +1,19 @@
 .navbar{
 z-index: 10000;
-background-color: $color-secundario;
+background-color: map-get($colores, color-secundario);
 padding: 20px 0!important;/* Utilice el important ya que tiene como predeterminado padding-top: 0.5rem padding-bottom: 0.5rem; y al utilizar el padding si que se aplica pero no lo 20px en su totalidad (8px)*/
 
     .logo{
     width: 150px;
     height: 150px;
     margin-left: 40px;
-    box-shadow: 2px 0px 15px $-negro;
+    box-shadow: 2px 0px 15px map-get($colores, -negro);
     }
 
     .navbar-nav{
 
         .nav-link{
-        color: $-blanco !important;/* Utilice el important ya que si no lo pongo el color predeterminado seria negro y me pisa el blanco*/
+        color: map-get($colores, -blanco) !important;/* Utilice el important ya que si no lo pongo el color predeterminado seria negro y me pisa el blanco*/
         font-family: $font-principal;
         font-size: 40px;
         font-weight: 500;
@@ -21,7 +21,7 @@ padding: 20px 0!important;/* Utilice el important ya que tiene como predetermina
         }
 
         .nav-link.active{
-        color: $-color-general !important;/* Utilice el important ya que si no lo pongo el color blanco me pisa al gris*/
+        color: map-get($colores, color-general) !important;/* Utilice el important ya que si no lo pongo el color blanco me pisa al gris*/
         font-weight: 800;
         }
 
@@ -30,7 +30,7 @@ padding: 20px 0!important;/* Utilice el important ya que tiene como predetermina
         content: '';
         height: 7px;
         width: 30%;
-        background-color: $color-principal;
+        background-color: map-get($colores, color-principal);
         display: block;
         transition: all 0.3s ease;
         }
@@ -39,7 +39,7 @@ padding: 20px 0!important;/* Utilice el important ya que tiene como predetermina
         content: '';
         height: 7px;
         width: 100%;
-        background-color: $-blanco;
+        background-color: map-get($colores, -blanco);
         display: block;
         }
     }

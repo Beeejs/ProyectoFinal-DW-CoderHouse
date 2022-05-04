@@ -1,15 +1,15 @@
 .inicio{
 display: flex;
-background-color: $-gris;
+background-color: map-get($colores, -gris);
 height: 100vh;
 
     &-content{
     margin: auto 0 auto 60px ; 
-    color: $-blanco;
+    color: map-get($colores, -blanco);
     text-transform:uppercase;
 
         .text-1{
-        -webkit-text-stroke: 1px $color-principal;
+        -webkit-text-stroke: 1px map-get($colores, color-principal);
         color: transparent;
         letter-spacing: 25px;
         font-size: 40px;
@@ -37,16 +37,16 @@ height: 100vh;
         font-family: $font-general;
         display: inline-block;
         font-size:16px;
-        color: $-blanco!important;/* Utilice important ya que al hacer el efecto hover me mostraba un color azul y me pisaba el blanco */
+        color: map-get($colores, -blanco)!important;/* Utilice important ya que al hacer el efecto hover me mostraba un color azul y me pisaba el blanco */
         padding: 20px 30px;
-        background-color: $color-principal;
-        border: 8px solid $-negro;
+        background-color:map-get($colores, color-principal);
+        border: 8px solid map-get($colores, -negro);
         cursor: pointer;
         font-weight: 600;
         text-align: center;
         text-decoration: none;
         
-        background-image: linear-gradient($color-secundario,rgba(17, 17, 17, 0.418));
+        background-image: linear-gradient(map-get($colores, color-secundario),rgba(17, 17, 17, 0.418));
         border-radius: 10px;
         background-repeat: no-repeat;
         background-size: 0% 100%;
@@ -69,7 +69,7 @@ height: 100vh;
     top: 25%;
     height: 600px;
     margin-top: 50px;
-    border: 30px double $-color-general;
+    border: 30px double map-get($colores, color-general);
     animation: a-galeria 5s ease-in-out infinite;
     }
 
