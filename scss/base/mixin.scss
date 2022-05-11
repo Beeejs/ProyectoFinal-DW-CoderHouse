@@ -1,0 +1,23 @@
+/* MIXIND */
+@mixin botones($zs-border){
+font-family: $font-general;
+display: inline-block;
+font-size:16px;
+text-transform:uppercase;
+color: map-get($colores, -blanco)!important;/* Utilice important ya que al hacer el efecto hover me mostraba un color azul y me pisaba el blanco */
+padding: 20px 30px;
+background-color:map-get($colores, color-principal);
+border: $zs-border solid map-get($colores, -negro);
+cursor: pointer;
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+
+background-image: linear-gradient(map-get($colores, color-secundario),rgba(17, 17, 17, 0.418));
+border-radius: 10px;
+background-repeat: no-repeat;
+background-size: 0% 100%;
+background-position-x: left;
+transition: background-size 0.8s ease;
+
+};

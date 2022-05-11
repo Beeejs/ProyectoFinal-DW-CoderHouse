@@ -5,6 +5,152 @@
 /* VARIABLES*/
 /* MAP-COLORES */
 /* VARIABLES-FONTS */
+/* EXTEND */
+.navbar-expand-lg .navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* MIXIND */
+section {
+  padding: 100px  0px; }
+
+.section-title h1 {
+  position: relative;
+  color: #b18c73;
+  letter-spacing: 5px;
+  font-size: 45px;
+  font-weight: 700;
+  padding-top: 150px;
+  margin: 80px 50px;
+  font-family: 'Shadows Into Light', cursive; }
+  .section-title h1::before {
+    content: '';
+    height: 10px;
+    width: 15%;
+    background-color: #7d7573;
+    border-radius: 10px;
+    position: absolute;
+    top: 103%;
+    left: 0; }
+  .section-title h1::after {
+    content: '';
+    height: 10px;
+    width: 8%;
+    background-color: #7d7573;
+    border-radius: 10px;
+    position: absolute;
+    top: 103%;
+    left: 0;
+    margin-top: 20px; }
+
+/* Footer */
+.main-footer {
+  background-color: #222;
+  text-align: center; }
+  .main-footer .footer-content {
+    display: inline-block;
+    padding: 30px; }
+    .main-footer .footer-content .title-footer h2 {
+      font-family: "Hurricane", cursive;
+      font-size: 75px;
+      font-weight: 700;
+      letter-spacing: 5px;
+      margin: 10px 0;
+      color: #b18c73; }
+    .main-footer .footer-content .redes-content ul {
+      margin: 0;
+      padding: 0; }
+    .main-footer .footer-content .redes-content li {
+      display: inline-block;
+      list-style: none;
+      padding: 30px 0;
+      cursor: pointer;
+      transition: all 0.5s ease; }
+      .main-footer .footer-content .redes-content li:hover {
+        transform: translateY(-10px) scale(1.2); }
+    .main-footer .footer-content .redes-content a {
+      font-size: 35px;
+      text-decoration: none;
+      color: #222;
+      border-radius: 50%;
+      margin: 5px 20px;
+      padding: 5px 15px;
+      background-color: #7d7573;
+      transition: color 0.3s ease; }
+    .main-footer .footer-content .redes-content .facebook:hover {
+      color: #3b5999; }
+    .main-footer .footer-content .redes-content .instagram:hover {
+      color: #e4405f; }
+    .main-footer .footer-content .redes-content .whatsapp:hover {
+      color: #00b300; }
+    .main-footer .footer-content .derechos {
+      margin-top: 10px;
+      padding: 30px 50px;
+      text-align: center; }
+      .main-footer .footer-content .derechos .copy {
+        font-family: "Permanent Marker", cursive;
+        font-size: 20px;
+        color: #7d7573; }
+        .main-footer .footer-content .derechos .copy span {
+          color: #b18c73; }
+
+/* Tablet */
+@media (max-width: 668px) {
+  .section-title h1::before {
+    content: '';
+    height: 10px;
+    width: 35%; }
+  .section-title h1::after {
+    content: '';
+    height: 10px;
+    width: 20%; }
+  .main-footer .footer-content {
+    padding: 30px 5px; }
+    .main-footer .footer-content .title-footer h2 {
+      font-size: 60px;
+      letter-spacing: 3px; }
+    .main-footer .footer-content .redes-content a {
+      font-size: 30px; }
+    .main-footer .footer-content .derechos {
+      margin-top: 10px;
+      padding: 20px 0px; }
+    .main-footer .footer-content .copy {
+      font-size: 18px; } }
+
+/* Mobile L */
+@media (max-width: 500px) {
+  .section-title h1 {
+    letter-spacing: 0px;
+    font-size: 40px;
+    padding-top: 100px;
+    margin: 80px 20px; }
+    .section-title h1::before {
+      content: '';
+      height: 5px;
+      width: 35%; }
+    .section-title h1::after {
+      content: '';
+      height: 5px;
+      width: 20%; }
+  .main-footer .footer-content .title-footer h2 {
+    font-size: 45px;
+    letter-spacing: 0px; }
+  .main-footer .footer-content .redes-content a {
+    font-size: 20px; }
+  .main-footer .footer-content .derechos {
+    margin-top: 0px; }
+  .main-footer .footer-content .copy {
+    font-size: 16px; } }
+
+/* Mobile S */
+@media (max-width: 340px) {
+  .footer-content .title-footer h2 {
+    font-size: 35px; }
+  .footer-content .redes-content a {
+    font-size: 20px;
+    margin: 0 5px; } }
+
 .navbar {
   z-index: 10000;
   background-color: #7d7573;
@@ -39,10 +185,6 @@
     width: 100%;
     background-color: #fff;
     display: block; }
-
-.navbar-expand-lg .navbar-collapse {
-  display: flex;
-  justify-content: center; }
 
 /* Responsive */
 @media (max-width: 1100px) {
@@ -104,6 +246,7 @@
       font-family: "Shadows Into Light", cursive;
       display: inline-block;
       font-size: 16px;
+      text-transform: uppercase;
       color: #fff !important;
       /* Utilice important ya que al hacer el efecto hover me mostraba un color azul y me pisaba el blanco */
       padding: 20px 30px;
@@ -209,3 +352,161 @@
     letter-spacing: 5px; }
   .inicio-content .text-2 {
     font-size: 18px; } }
+
+.nosotros {
+  background-color: #222;
+  padding: 100px 0px 0px; }
+  .nosotros-content .portada-nosotros {
+    background: linear-gradient(#05060b, #544f4db6), url(../../img/ilustraciones-3.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    font-family: "Permanent Marker", cursive;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #444;
+    padding: 150px 300px;
+    margin: 50px 0;
+    margin-bottom: 100px; }
+    .nosotros-content .portada-nosotros .text-nosotros {
+      margin: 40px 60px;
+      border: 10px double #7d7573;
+      text-align: center;
+      padding: 40px 0; }
+      .nosotros-content .portada-nosotros .text-nosotros h3 {
+        -webkit-text-stroke: 3px #b18c73;
+        font-size: 45px;
+        color: #fff; }
+
+.sobre-nosotros {
+  background-color: #b18c73; }
+  .sobre-nosotros-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    margin: auto; }
+    .sobre-nosotros-content .left {
+      width: 45%; }
+      .sobre-nosotros-content .left img {
+        height: 450px;
+        width: 500px;
+        object-fit: cover;
+        border: 30px double #444;
+        box-shadow: -50px 48px 28px 0px rgba(0, 0, 0, 0.61);
+        -webkit-box-shadow: -50px 48px 28px 0px rgba(0, 0, 0, 0.61);
+        -moz-box-shadow: -50px 48px 28px 0px rgba(0, 0, 0, 0.61);
+        border-radius: 50px; }
+    .sobre-nosotros-content .right {
+      width: 55%; }
+      .sobre-nosotros-content .right .text {
+        font-family: "Permanent Marker", cursive;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px; }
+        .sobre-nosotros-content .right .text span {
+          color: #7d7573;
+          font-size: 30px;
+          font-weight: 700;
+          letter-spacing: 5px;
+          -webkit-text-stroke: 0.5px #fff;
+          /* #fff*/ }
+      .sobre-nosotros-content .right p {
+        font-family: "Permanent Marker", cursive;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 30px 0; }
+      .sobre-nosotros-content .right a {
+        font-family: "Shadows Into Light", cursive;
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff !important;
+        /* Utilice important ya que al hacer el efecto hover me mostraba un color azul y me pisaba el blanco */
+        padding: 20px 30px;
+        background-color: #b18c73;
+        border: 3px solid #111;
+        cursor: pointer;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        background-image: linear-gradient(#7d7573, rgba(17, 17, 17, 0.418));
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: left;
+        transition: background-size 0.8s ease; }
+        .sobre-nosotros-content .right a:hover {
+          background-size: 100% 100%; }
+
+/* Responsive */
+@media (max-width: 1450px) {
+  .nosotros-content .portada-nosotros {
+    padding: 150px 100px; }
+    .nosotros-content .portada-nosotros .text-nosotros {
+      padding: 20px 0; } }
+
+/* Laptop */
+@media (max-width: 1100px) {
+  .nosotros-content .portada-nosotros {
+    padding: 100px 20px; }
+  .sobre-nosotros-content {
+    text-align: center; }
+    .sobre-nosotros-content .right {
+      margin-top: 50px;
+      margin: 50px 20px; }
+    .sobre-nosotros-content .column.right {
+      width: 100%; }
+    .sobre-nosotros-content .column.left {
+      width: 100%; } }
+
+/* Tablet */
+@media (max-width: 668px) {
+  .nosotros-content .portada-nosotros .text-nosotros {
+    margin: 20px 40px;
+    padding: 20px 0; }
+    .nosotros-content .portada-nosotros .text-nosotros h3 {
+      font-size: 35px; }
+  .sobre-nosotros-content .left img {
+    height: 400px;
+    width: 400px; }
+  .sobre-nosotros-content .right .text span {
+    font-size: 25px;
+    letter-spacing: 0px; }
+  .sobre-nosotros-content .right p {
+    font-size: 18px; }
+  .sobre-nosotros-content .right a {
+    padding: 15px 30px; } }
+
+/* Mobile L */
+@media (max-width: 500px) {
+  .nosotros-content .portada-nosotros .text-nosotros {
+    margin: 0px 10px;
+    padding: 10px 0; }
+    .nosotros-content .portada-nosotros .text-nosotros h3 {
+      -webkit-text-stroke: 2px #b18c73;
+      font-size: 30px; }
+  .sobre-nosotros-content .left img {
+    height: 350px;
+    width: 350px; } }
+
+/* Mobile M */
+@media (max-width: 375px) {
+  .nosotros-content .portada-nosotros .text-nosotros {
+    margin: 0px;
+    padding: 5px 0; }
+    .nosotros-content .portada-nosotros .text-nosotros h3 {
+      font-size: 25px; }
+  .sobre-nosotros-content .left img {
+    height: 300px;
+    width: 300px; }
+  .sobre-nosotros-content .right .text {
+    font-size: 20px; }
+    .sobre-nosotros-content .right .text span {
+      font-size: 20px;
+      letter-spacing: 0px; }
+  .sobre-nosotros-content .right p {
+    font-size: 16px; }
+  .sobre-nosotros-content .right a {
+    font-size: 12px;
+    padding: 10px 20px; } }

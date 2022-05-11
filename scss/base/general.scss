@@ -1,0 +1,285 @@
+section{
+padding: 100px  0px ;
+}
+
+
+
+.section-title h1{
+position: relative;
+color: #b18c73;
+letter-spacing: 5px;
+font-size: 45px;
+font-weight: 700;
+padding-top: 150px;
+margin: 80px 50px;
+font-family: 'Shadows Into Light', cursive;
+
+    &::before{
+    content: '';
+    height: 10px;
+    width: 15%;
+    background-color: #7d7573;  
+    border-radius: 10px;
+    position: absolute;  
+    top: 103%;
+    left: 0;
+    }
+
+    &::after{
+    content: '';
+    height: 10px;
+    width: 8%;
+    background-color: #7d7573;
+    border-radius: 10px;
+    position: absolute;  
+    top: 103%;
+    left: 0;
+    margin-top:20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.main-footer{
+background-color: map-get($colores, -gris);
+text-align: center;
+
+    .footer-content{
+    display: inline-block;
+    padding:30px;
+
+        .title-footer h2{
+        font-family: $font-principal;
+        font-size: 75px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        margin: 10px 0;
+        color: map-get($colores, color-principal);
+        }
+
+
+        .redes-content{
+
+            ul{
+            margin: 0;
+            padding: 0;
+            }
+
+            li{
+            display: inline-block;
+            list-style: none;
+            padding: 30px 0;
+            cursor: pointer;
+            transition: all 0.5s ease;
+                
+                &:hover{
+                transform: translateY(-10px) scale(1.2);
+                }
+            }
+
+
+            a{
+            font-size: 35px;
+            text-decoration: none;
+            color: map-get($colores, -gris);
+            border-radius: 50%;
+            margin: 5px 20px;
+            padding: 5px 15px;
+            background-color: map-get($colores, color-secundario);
+            transition: color 0.3s ease;
+            
+            }
+
+            .facebook{
+                &:hover{
+                color: map-get($redes, -facebook);
+                }
+            }
+
+            .instagram{
+                &:hover{
+                color: map-get($redes, -instagram);
+                }
+            }
+
+            .whatsapp{
+                &:hover{
+                color: map-get($redes, -whatsapp);
+                }
+            }
+        }
+
+
+
+        .derechos{
+        margin-top: 10px;
+        padding: 30px 50px;
+        text-align: center;
+
+            .copy{
+            font-family: $font-secundario;
+            font-size: 20px;
+            color: map-get($colores, color-secundario);
+
+                span{
+                color: map-get($colores, color-principal);
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media (max-width:668px){     
+.section-title h1{
+    
+        &::before{
+        content: '';
+        height: 10px;
+        width: 35%;
+        }
+    
+        &::after{
+        content: '';
+        height: 10px;
+        width: 20%;
+        }
+}
+
+.main-footer{
+
+    .footer-content{
+        padding:30px 5px;
+
+        .title-footer{
+
+            h2{
+            font-size: 60px;
+            letter-spacing: 3px;
+            }
+        }
+
+        .redes-content{
+
+            a{
+            font-size: 30px; 
+            }
+        }
+
+        .derechos{
+        margin-top: 10px;
+        padding: 20px 0px;  
+        }
+
+        .copy{
+        font-size: 18px;
+        }
+    }
+
+}
+}
+
+
+/* Mobile L */
+@media (max-width:500px){
+.section-title h1{
+letter-spacing: 0px;
+font-size: 40px;
+padding-top: 100px;
+margin:80px 20px;
+
+    &::before{
+    content: '';
+    height: 5px;
+    width: 35%;
+    }
+
+    &::after{
+    content: '';
+    height: 5px;
+    width: 20%;
+    }
+}
+
+
+
+.main-footer{
+
+    .footer-content{
+
+        .title-footer{
+
+            h2{
+            font-size: 45px;
+            letter-spacing: 0px;
+            }
+        }
+
+        .redes-content{
+
+            a{
+            font-size: 20px; 
+            }
+        }
+
+        .derechos{
+        margin-top: 0px;
+        }
+
+        .copy{
+        font-size: 16px;
+        }
+    }
+
+}
+
+}
+
+
+
+
+/* Mobile S */
+@media (max-width:340px){      
+
+.footer-content{
+
+    .title-footer{
+
+        h2{
+        font-size: 35px;
+        }
+    }
+
+    .redes-content{
+
+        a{
+        font-size: 20px; 
+        margin: 0 5px;
+        }
+    }
+
+
+}
+
+} 

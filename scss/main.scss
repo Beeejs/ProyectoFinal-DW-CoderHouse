@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 /* COMPONENTS */
-@import './varibles/variables.scss';
+@import './base/variables.scss';
+@import './base/extend.scss';
+@import './base/mixin.scss';
+@import './base/general.scss';
 @import './components/header.scss';
 @import './components/inicio.scss';
+@import './components/nosotros.scss';
