@@ -79,7 +79,7 @@ height: 100vh;
 
 
 /* Responsive */
-
+/* Retoques Desktop */
 @media (max-width:1750px){
 .inicio{
     &-content{
@@ -102,7 +102,7 @@ height: 100vh;
 }
 
 
-
+/* Laptop L*/
 @media (max-width:1450px){
 .inicio{
     &-content{
@@ -131,7 +131,7 @@ height: 100vh;
 
 
 
-
+/* Laptop */
 @media (max-width:1100px){
 .inicio{
     &-content{
@@ -170,7 +170,7 @@ height: 100vh;
 }
 }
 
-
+/* Tablet */
 @media (max-width:668px){      
 .inicio{
     &-content{
@@ -201,7 +201,7 @@ height: 100vh;
 }
 }
 
-
+/* Mobile L */
 @media (max-width:425px){
 .inicio{
     &-content{
@@ -215,7 +215,7 @@ height: 100vh;
 }
 
 
-
+/* Mobile M */
 @media (max-width:375px){
 .inicio{
     &-content{

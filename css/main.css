@@ -286,6 +286,7 @@ section {
     transform: translateY(-20px); } }
 
 /* Responsive */
+/* Retoques Desktop */
 @media (max-width: 1750px) {
   .inicio-content {
     margin: auto 0 auto 30px; }
@@ -296,6 +297,7 @@ section {
   .inicio .img-inicio {
     right: 5%; } }
 
+/* Laptop L*/
 @media (max-width: 1450px) {
   .inicio-content .text-1 {
     letter-spacing: 5px; }
@@ -308,6 +310,7 @@ section {
     right: 2%;
     height: 500px; } }
 
+/* Laptop */
 @media (max-width: 1100px) {
   .inicio-content .text-1 {
     animation: relleno 5s ease-in-out infinite; }
@@ -329,6 +332,7 @@ section {
   .inicio .img-inicio {
     display: none; } }
 
+/* Tablet */
 @media (max-width: 668px) {
   .inicio-content .text-1 {
     font-size: 30px;
@@ -342,10 +346,12 @@ section {
     font-size: 12px;
     padding: 20px 20px; } }
 
+/* Mobile L */
 @media (max-width: 425px) {
   .inicio-content {
     margin: auto 0 auto 10px; } }
 
+/* Mobile M */
 @media (max-width: 375px) {
   .inicio-content .text-1 {
     font-size: 25px;
@@ -510,3 +516,180 @@ section {
   .sobre-nosotros-content .right a {
     font-size: 12px;
     padding: 10px 20px; } }
+
+.servicios {
+  background: #222; }
+  .servicios-container {
+    background-color: #b18c73;
+    padding: 50px 0px;
+    margin: 50px 100px;
+    border: 10px solid #7d7573;
+    border-radius: 20px;
+    text-align: center; }
+    .servicios-container h2 {
+      font-family: 'Permanent Marker', cursive;
+      -webkit-text-stroke: 0.5px #fff;
+      font-size: 35px;
+      text-align: center;
+      color: #7d7573; }
+    .servicios-container .servicios-items li {
+      display: inline-block;
+      list-style: none;
+      margin: 50px 100px; }
+    .servicios-container .servicios-items .icon:hover i {
+      background-color: #7d7573;
+      color: #222;
+      border: 2px dashed #222;
+      transform: rotateY(180deg); }
+    .servicios-container .servicios-items .icon i {
+      font-size: 70px;
+      width: 200px;
+      height: 200px;
+      padding: 60px 0;
+      background-color: #222;
+      color: #fff;
+      border: 4px dashed #fff;
+      border-radius: 50%;
+      transition: color, background-color, border 0.3s ease;
+      transition: transform 0.3s ease; }
+    .servicios-container .servicios-items h4 {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 20px 0; }
+    .servicios-container .servicios-items p {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 16px;
+      font-weight: 400;
+      color: #111;
+      text-transform: uppercase; }
+
+.sobre-servicios {
+  background-color: #b18c73; }
+  .sobre-servicios .sobre-servicios-content {
+    background-color: #111;
+    border-radius: 20px;
+    padding: 100px 50px;
+    margin: 50px 100px;
+    text-align: center; }
+    .sobre-servicios .sobre-servicios-content .servicios-explicacion {
+      background-color: #222;
+      border-radius: 10px;
+      padding: 50px;
+      margin: 50px 20px;
+      transition: background-color 0.3s ease;
+      transition: transform 0.3s ease; }
+      .sobre-servicios .sobre-servicios-content .servicios-explicacion:hover {
+        background-color: #444;
+        transform: scale(1.07); }
+        .sobre-servicios .sobre-servicios-content .servicios-explicacion:hover .icon i {
+          padding: 40px 0;
+          background-color: #444;
+          color: #fff;
+          border-color: #7d7573; }
+        .sobre-servicios .sobre-servicios-content .servicios-explicacion:hover h4 {
+          color: #111;
+          font-weight: 700; }
+      .sobre-servicios .sobre-servicios-content .servicios-explicacion .icon i {
+        font-size: 50px;
+        width: 150px;
+        height: 150px;
+        padding: 40px 0;
+        background-color: #7d7573;
+        color: #222;
+        border: 10px double #fff;
+        border-radius: 50%;
+        transition: all 0.3s ease; }
+      .sobre-servicios .sobre-servicios-content .servicios-explicacion h4 {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 20px;
+        font-weight: 600;
+        color: #7d7573;
+        text-transform: uppercase;
+        margin: 20px 0; }
+      .sobre-servicios .sobre-servicios-content .servicios-explicacion p {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase; }
+    .sobre-servicios .sobre-servicios-content .accordion-button {
+      font-family: 'Permanent Marker', cursive;
+      text-transform: uppercase;
+      font-size: 20px; }
+      .sobre-servicios .sobre-servicios-content .accordion-button:not(.collapsed) {
+        color: #7d7573 !important;
+        /* Utilice el important ya que si no lo pongo el color blanco me pisa el #7d7573*/
+        font-weight: 700; }
+      .sobre-servicios .sobre-servicios-content .accordion-button:focus {
+        box-shadow: 0px 0px 6px 4px #b18c73; }
+    .sobre-servicios .sobre-servicios-content .accordion-body p {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 16px;
+      color: #fff;
+      text-align: start;
+      font-weight: 500; }
+    .sobre-servicios .sobre-servicios-content .subtitle-acordion h2 {
+      font-family: 'Permanent Marker', cursive;
+      -webkit-text-stroke: 0.5px #fff;
+      font-size: 35px;
+      text-align: center;
+      background-color: #7d7573;
+      margin: 50px 0;
+      margin-top: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      color: #7d7573; }
+
+/* Responsive */
+/* Retoques Desktop */
+@media (max-width: 1750px) {
+  .servicios-container {
+    margin: 50px 50px; } }
+
+/* Laptop L*/
+@media (max-width: 1450px) {
+  .servicios-container {
+    margin: 50px 300px; } }
+
+/* Laptop */
+@media (max-width: 1100px) {
+  .servicios-container {
+    margin: 50px 80px; } }
+
+/* Tablet */
+@media (max-width: 668px) {
+  .servicios-container {
+    margin: 50px 20px; }
+    .servicios-container .servicios-items li {
+      margin: 50px 30px; }
+    .servicios-container .servicios-items .icon i {
+      font-size: 50px;
+      width: 150px;
+      height: 150px;
+      padding: 45px 0; }
+    .servicios-container .servicios-items h4 {
+      font-size: 20px;
+      font-weight: 600; }
+    .servicios-container .servicios-items p {
+      font-size: 15px;
+      font-weight: 300; }
+  .sobre-servicios .sobre-servicios-content {
+    padding: 50px 0px;
+    margin: 20px 10px; }
+    .sobre-servicios .sobre-servicios-content .servicios-explicacion {
+      padding: 50px 10px;
+      margin: 50px 20px; }
+      .sobre-servicios .sobre-servicios-content .servicios-explicacion p {
+        font-size: 15px; } }
+
+/* Mobile L */
+@media (max-width: 500px) {
+  .accordion-button {
+    font-size: 18px !important;
+    /* Utilice el important ya que si no lo pongo el size de 20px me pisa los 18px*/ }
+  .subtitle-acordion h2 {
+    font-size: 25px;
+    padding: 20px 0; } }
