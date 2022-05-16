@@ -105,17 +105,15 @@ section {
     content: '';
     height: 10px;
     width: 20%; }
-  .main-footer .footer-content {
-    padding: 30px 5px; }
-    .main-footer .footer-content .title-footer h2 {
-      font-size: 60px;
-      letter-spacing: 3px; }
-    .main-footer .footer-content .redes-content a {
-      font-size: 30px; }
-    .main-footer .footer-content .derechos {
-      margin-top: 10px;
-      padding: 20px 0px; }
-    .main-footer .footer-content .copy {
+  .main-footer .footer-content .title-footer h2 {
+    font-size: 60px;
+    letter-spacing: 3px; }
+  .main-footer .footer-content .redes-content a {
+    font-size: 30px; }
+  .main-footer .footer-content .derechos {
+    margin-top: 10px;
+    padding: 20px 0px; }
+    .main-footer .footer-content .derechos .copy {
       font-size: 18px; } }
 
 /* Mobile L */
@@ -140,14 +138,14 @@ section {
     font-size: 20px; }
   .main-footer .footer-content .derechos {
     margin-top: 0px; }
-  .main-footer .footer-content .copy {
-    font-size: 16px; } }
+    .main-footer .footer-content .derechos .copy {
+      font-size: 16px; } }
 
 /* Mobile S */
 @media (max-width: 340px) {
-  .footer-content .title-footer h2 {
+  .main-footer .footer-content .title-footer h2 {
     font-size: 35px; }
-  .footer-content .redes-content a {
+  .main-footer .footer-content .redes-content a {
     font-size: 20px;
     margin: 0 5px; } }
 
@@ -527,7 +525,7 @@ section {
     border-radius: 20px;
     text-align: center; }
     .servicios-container h2 {
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       -webkit-text-stroke: 0.5px #fff;
       font-size: 35px;
       text-align: center;
@@ -553,14 +551,14 @@ section {
       transition: color, background-color, border 0.3s ease;
       transition: transform 0.3s ease; }
     .servicios-container .servicios-items h4 {
-      font-family: 'Shadows Into Light', cursive;
+      font-family: "Shadows Into Light", cursive;
       font-size: 20px;
       font-weight: 600;
       color: #fff;
       text-transform: uppercase;
       margin: 20px 0; }
     .servicios-container .servicios-items p {
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       font-size: 16px;
       font-weight: 400;
       color: #111;
@@ -603,20 +601,20 @@ section {
         border-radius: 50%;
         transition: all 0.3s ease; }
       .sobre-servicios .sobre-servicios-content .servicios-explicacion h4 {
-        font-family: 'Shadows Into Light', cursive;
+        font-family: "Shadows Into Light", cursive;
         font-size: 20px;
         font-weight: 600;
         color: #7d7573;
         text-transform: uppercase;
         margin: 20px 0; }
       .sobre-servicios .sobre-servicios-content .servicios-explicacion p {
-        font-family: 'Permanent Marker', cursive;
+        font-family: "Permanent Marker", cursive;
         font-size: 16px;
         font-weight: 400;
         color: #fff;
         text-transform: uppercase; }
     .sobre-servicios .sobre-servicios-content .accordion-button {
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       text-transform: uppercase;
       font-size: 20px; }
       .sobre-servicios .sobre-servicios-content .accordion-button:not(.collapsed) {
@@ -626,13 +624,13 @@ section {
       .sobre-servicios .sobre-servicios-content .accordion-button:focus {
         box-shadow: 0px 0px 6px 4px #b18c73; }
     .sobre-servicios .sobre-servicios-content .accordion-body p {
-      font-family: 'Shadows Into Light', cursive;
+      font-family: "Shadows Into Light", cursive;
       font-size: 16px;
       color: #fff;
       text-align: start;
       font-weight: 500; }
     .sobre-servicios .sobre-servicios-content .subtitle-acordion h2 {
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
       -webkit-text-stroke: 0.5px #fff;
       font-size: 35px;
       text-align: center;
@@ -687,9 +685,319 @@ section {
 
 /* Mobile L */
 @media (max-width: 500px) {
-  .accordion-button {
+  .sobre-servicios .sobre-servicios-content .accordion-button {
     font-size: 18px !important;
     /* Utilice el important ya que si no lo pongo el size de 20px me pisa los 18px*/ }
-  .subtitle-acordion h2 {
+  .sobre-servicios .sobre-servicios-content .subtitle-acordion h2 {
     font-size: 25px;
     padding: 20px 0; } }
+
+/* Mobile S */
+@media (max-width: 340px) {
+  .servicios-content .servicios-container h2 {
+    font-size: 30px; } }
+
+.galeria {
+  background-color: #222; }
+  .galeria-content h2 {
+    font-family: "Permanent Marker", cursive;
+    -webkit-text-stroke: 0.5px #fff;
+    font-size: 35px;
+    text-align: center;
+    background-color: #7d7573;
+    padding: 30px;
+    border-radius: 10px;
+    color: #7d7573; }
+  .galeria-content .galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #b18c73;
+    border: 10px solid #7d7573;
+    margin: 100px;
+    border-radius: 20px;
+    padding: 50px; }
+    .galeria-content .galeria-container .galeria-img {
+      position: relative;
+      overflow: hidden;
+      margin: 20px;
+      padding: 30px;
+      background-color: #444;
+      border: 3px solid #fff;
+      border-radius: 10px; }
+      .galeria-content .galeria-container .galeria-img:hover .product-container {
+        opacity: 1;
+        visibility: visible; }
+        .galeria-content .galeria-container .galeria-img:hover .product-container h4 {
+          transform: translateY(-40px); }
+        .galeria-content .galeria-container .galeria-img:hover .product-container h3 {
+          transform: translateY(40px); }
+      .galeria-content .galeria-container .galeria-img img {
+        width: 400px;
+        height: 380px;
+        display: block; }
+      .galeria-content .galeria-container .galeria-img .product-container {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.748);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease; }
+        .galeria-content .galeria-container .galeria-img .product-container h3 {
+          font-family: "Shadows Into Light", cursive;
+          color: #fff;
+          font-weight: 700;
+          font-size: 25px;
+          text-transform: uppercase;
+          margin: 40px 0;
+          transition: all 0.5s ease; }
+        .galeria-content .galeria-container .galeria-img .product-container h4 {
+          font-family: "Permanent Marker", cursive;
+          color: #b18c73;
+          font-size: 16px;
+          margin-top: 100px;
+          transition: all 0.5s ease; }
+
+/* Responsive */
+/* Laptop */
+@media (max-width: 1100px) {
+  .galeria-content .galeria-container {
+    margin: 100px 50px;
+    padding: 50px 20px; } }
+
+/* Tablet */
+@media (max-width: 668px) {
+  .galeria-content .galeria-container {
+    margin: 100px 20px;
+    padding: 50px 0px; }
+    .galeria-content .galeria-container .galeria-img {
+      margin-bottom: 20px;
+      padding: 20px 10px; }
+      .galeria-content .galeria-container .galeria-img img {
+        width: 350px;
+        height: 350px; }
+      .galeria-content .galeria-container .galeria-img .product-container h3 {
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0px;
+        margin-left: 10px; }
+      .galeria-content .galeria-container .galeria-img .product-container h4 {
+        font-size: 15px;
+        margin-left: 10px; } }
+
+/* Mobile L */
+@media (max-width: 500px) {
+  .galeria-content h2 {
+    font-size: 25px;
+    padding: 20px 0; }
+  .galeria-content .galeria-container {
+    margin: 100px 20px; }
+    .galeria-content .galeria-container .galeria-img {
+      margin-bottom: 20px;
+      padding: 20px 0px; }
+      .galeria-content .galeria-container .galeria-img img {
+        width: 300px;
+        height: 300px; } }
+
+/* Mobile M */
+@media (max-width: 375px) {
+  .galeria-content .galeria-container .galeria-img img {
+    width: 250px;
+    height: 250px; }
+  .galeria-content .galeria-container .galeria-img .product-container h3 {
+    font-size: 15px; }
+  .galeria-content .galeria-container .galeria-img .product-container h4 {
+    font-size: 13px; } }
+
+/* Mobile S */
+@media (max-width: 340px) {
+  .galeria-content .galeria-container .galeria-img {
+    margin: 10px 10px; } }
+
+.contacto {
+  background-color: #222; }
+  .contacto .concato-conatiner {
+    background-color: #b18c73;
+    border-radius: 10px;
+    padding: 70px 0; }
+    .contacto .concato-conatiner .info-contacto {
+      text-align: center;
+      background-color: #222; }
+      .contacto .concato-conatiner .info-contacto li {
+        display: inline-block;
+        list-style: none;
+        margin: 50px 100px; }
+      .contacto .concato-conatiner .info-contacto i {
+        font-size: 80px;
+        margin: 0 30px;
+        padding: 30px 50px;
+        border: 5px solid #111;
+        border-bottom-left-radius: 20%;
+        border-top-right-radius: 20%;
+        background-color: #444;
+        color: #fff;
+        transition: border-radius 0.3s ease; }
+        .contacto .concato-conatiner .info-contacto i:hover {
+          border-radius: 0; }
+      .contacto .concato-conatiner .info-contacto h4 {
+        font-family: "Shadows Into Light", cursive;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 15px 0;
+        padding: 2px  5px;
+        color: #7d7573; }
+      .contacto .concato-conatiner .info-contacto p {
+        font-family: "Permanent Marker", cursive;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff; }
+
+.main-form {
+  background-color: #7d7573;
+  padding: 100px 0;
+  text-align: center; }
+  .main-form .form-content {
+    margin: 20px 100px; }
+    .main-form .form-content .section-contacto {
+      text-align: center; }
+      .main-form .form-content .section-contacto h2 {
+        font-family: "Permanent Marker", cursive;
+        -webkit-text-stroke: 1px #fff;
+        margin: 50px;
+        margin-bottom: 100px;
+        border: 10px double #222;
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #222;
+        padding: 20px 0; }
+    .main-form .form-content .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly; }
+      .main-form .form-content .form-container .left-c {
+        width: 55%; }
+      .main-form .form-content .form-container .right-c {
+        width: 45%; }
+        .main-form .form-content .form-container .right-c .box-iframe iframe {
+          height: 400px;
+          width: 700px;
+          border-radius: 10px;
+          box-shadow: -1px 1px 292px -53px rgba(0, 0, 0, 0.649);
+          -webkit-box-shadow: -1px 1px 292px -53px rgba(0, 0, 0, 0.631);
+          -moz-box-shadow: -1px 1px 292px -53px rgba(0, 0, 0, 0.636); }
+    .main-form .form-content .input-form {
+      width: 100%; }
+      .main-form .form-content .input-form input {
+        font-family: "Shadows Into Light", cursive;
+        font-size: 20px;
+        font-weight: bold;
+        background: #fff;
+        width: 100%;
+        padding: 10px 20px;
+        margin: 30px 0;
+        color: #000;
+        outline: none;
+        border: 5px solid #222; }
+    .main-form .form-content .input-form-mensaje {
+      width: 100%; }
+      .main-form .form-content .input-form-mensaje textarea {
+        font-family: "Shadows Into Light", cursive;
+        font-size: 20px;
+        font-weight: bold;
+        background: #fff;
+        width: 100%;
+        height: 25vh;
+        padding: 10px 20px;
+        margin: 30px 0;
+        resize: none;
+        outline: none;
+        border: 5px solid #222; }
+    .main-form .form-content button {
+      font-family: "Shadows Into Light", cursive;
+      display: inline-block;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff !important;
+      /* Utilice important ya que al hacer el efecto hover me mostraba un color azul y me pisaba el blanco */
+      padding: 20px 30px;
+      background-color: #b18c73;
+      border: 3px solid #111;
+      cursor: pointer;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      background-image: linear-gradient(#7d7573, rgba(17, 17, 17, 0.418));
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      background-position-x: left;
+      transition: background-size 0.8s ease; }
+      .main-form .form-content button:hover {
+        background-size: 100% 100%; }
+
+/* Responsive */
+/* Retoques Desktop */
+@media (max-width: 1750px) {
+  .main-form .form-content {
+    margin: 20px; }
+    .main-form .form-content .form-container .left-c {
+      width: 100%; }
+    .main-form .form-content .form-container .right-c {
+      width: 100%; }
+      .main-form .form-content .form-container .right-c .box-iframe iframe {
+        height: 400px;
+        width: 100%; } }
+
+/* Laptop L*/
+@media (max-width: 1450px) {
+  .main-form .form-content {
+    margin: 20px; }
+    .main-form .form-content .form-container .right-c .box-iframe iframe {
+      height: 400px;
+      width: 100%; } }
+
+/* Laptop */
+@media (max-width: 1100px) {
+  .main-form .form-content .form-container .right-c .box-iframe iframe {
+    height: 300px;
+    width: 100%; } }
+
+/* Tablet */
+@media (max-width: 668px) {
+  .contacto .concato-conatiner {
+    padding: 50px 0; }
+    .contacto .concato-conatiner .info-contacto li {
+      display: inline-block;
+      list-style: none;
+      margin: 50px 80px; }
+    .contacto .concato-conatiner .info-contacto i {
+      font-size: 60px;
+      margin: 0 20px; }
+    .contacto .concato-conatiner .info-contacto h4 {
+      font-size: 25px; }
+    .contacto .concato-conatiner .info-contacto p {
+      font-size: 20px; }
+  .main-form .form-content .section-contacto h2 {
+    margin: 50px 0;
+    margin-bottom: 100px;
+    font-size: 35px; } }
+
+/* Mobile L */
+@media (max-width: 500px) {
+  .contacto .concato-conatiner .info-contacto li {
+    margin: 50px 50px; } }
+
+/* Mobile L */
+@media (max-width: 425px) {
+  .contacto .concato-conatiner .info-contacto li {
+    margin: 50px 0px; } }
+
+/* Mobile S */
+@media (max-width: 340px) {
+  .main-form .form-content .section-contacto h2 {
+    font-size: 30px; } }

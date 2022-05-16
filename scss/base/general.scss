@@ -170,7 +170,6 @@ text-align: center;
 .main-footer{
 
     .footer-content{
-        padding:30px 5px;
 
         .title-footer{
 
@@ -190,10 +189,10 @@ text-align: center;
         .derechos{
         margin-top: 10px;
         padding: 20px 0px;  
-        }
 
-        .copy{
-        font-size: 18px;
+            .copy{
+            font-size: 18px;
+            }
         }
     }
 
@@ -245,11 +244,12 @@ margin:80px 20px;
 
         .derechos{
         margin-top: 0px;
+
+            .copy{
+            font-size: 16px;
+            }
         }
 
-        .copy{
-        font-size: 16px;
-        }
     }
 
 }
@@ -261,25 +261,27 @@ margin:80px 20px;
 
 /* Mobile S */
 @media (max-width:340px){      
+.main-footer{
 
-.footer-content{
+    .footer-content{
 
-    .title-footer{
+        .title-footer{
 
-        h2{
-        font-size: 35px;
+            h2{
+            font-size: 35px;
+            }
         }
-    }
 
-    .redes-content{
+        .redes-content{
 
-        a{
-        font-size: 20px; 
-        margin: 0 5px;
+            a{
+            font-size: 20px; 
+            margin: 0 5px;
+            }
         }
+
+
     }
-
-
 }
 
 } 

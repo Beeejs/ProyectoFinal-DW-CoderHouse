@@ -1,20 +1,20 @@
 .servicios{
-background: #222;
+background: map-get($colores, -gris);
 
     &-container{
-    background-color: #b18c73;
+    background-color: map-get($colores, color-principal);
     padding: 50px 0px;
     margin: 50px 100px;
-    border: 10px solid #7d7573;
+    border: 10px solid map-get($colores, color-secundario);
     border-radius: 20px;
     text-align: center;
 
         h2{
-        font-family: 'Permanent Marker', cursive;
-        -webkit-text-stroke: 0.5px #fff;
+        font-family: $font-secundario;
+        -webkit-text-stroke: 0.5px map-get($colores, -blanco);
         font-size: 35px;
         text-align: center;
-        color: #7d7573;
+        color: map-get($colores, color-secundario);
         }
 
         .servicios-items{
@@ -28,9 +28,9 @@ background: #222;
             .icon{
 
                 &:hover i{
-                background-color: #7d7573;
-                color: #222;
-                border: 2px dashed #222;
+                background-color: map-get($colores, color-secundario);
+                color: map-get($colores, -gris);
+                border: 2px dashed map-get($colores, -gris);
                 transform: rotateY(180deg);
                 }
                 
@@ -39,9 +39,9 @@ background: #222;
                 width:200px;
                 height: 200px;
                 padding: 60px 0;
-                background-color: #222;
-                color: #fff;
-                border: 4px dashed #fff;
+                background-color: map-get($colores, -gris);
+                color: map-get($colores, -blanco);
+                border: 4px dashed map-get($colores, -blanco);
                 border-radius: 50%;
                 transition: color, background-color, border 0.3s ease;
                 transition: transform 0.3s ease;
@@ -50,19 +50,19 @@ background: #222;
             }
 
             h4{
-            font-family: 'Shadows Into Light', cursive;
+            font-family: $font-general;
             font-size: 20px;
             font-weight: 600;
-            color: #fff;
+            color: map-get($colores, -blanco);
             text-transform: uppercase;
             margin: 20px 0;
             }
 
             p{
-            font-family: 'Permanent Marker', cursive;
+            font-family: $font-secundario;
             font-size: 16px;
             font-weight: 400;
-            color: #111;
+            color: map-get($colores, -negro);
             text-transform: uppercase;
             }
         }
@@ -73,11 +73,11 @@ background: #222;
 
 
 .sobre-servicios{
-background-color: #b18c73;
+background-color: map-get($colores, color-principal);
 
 
     .sobre-servicios-content{
-    background-color: #111;
+    background-color: map-get($colores, -negro);
     border-radius: 20px;
     padding: 100px 50px;
     margin: 50px 100px;
@@ -85,7 +85,7 @@ background-color: #b18c73;
 
 
         .servicios-explicacion{
-        background-color: #222;
+        background-color: map-get($colores, -gris);
         border-radius: 10px;
         padding: 50px;
         margin: 50px 20px;
@@ -94,14 +94,14 @@ background-color: #b18c73;
             
 
             &:hover{
-            background-color: #444;
+            background-color: map-get($colores, color-general);
             transform: scale(1.07);
 
                 .icon i{
                 padding: 40px 0;
-                background-color: #444;
-                color: #fff;
-                border-color: #7d7573;
+                background-color: map-get($colores, color-general);
+                color: map-get($colores, -blanco);
+                border-color: map-get($colores, color-secundario);
                 }
 
                 h4{
@@ -118,28 +118,28 @@ background-color: #b18c73;
             width:150px;
             height: 150px;
             padding: 40px 0;
-            background-color: #7d7573;
-            color: #222;
-            border: 10px double #fff;
+            background-color: map-get($colores, color-secundario);
+            color: map-get($colores, -gris);
+            border: 10px double map-get($colores, -blanco);
             border-radius: 50%;
             transition: all 0.3s ease;
             }
 
 
             h4{
-            font-family: 'Shadows Into Light', cursive;
+            font-family: $font-general;
             font-size: 20px;
             font-weight: 600;
-            color: #7d7573;
+            color: map-get($colores, color-secundario);
             text-transform: uppercase;
             margin: 20px 0;  
             }
 
             p{
-            font-family: 'Permanent Marker', cursive;
+            font-family: $font-secundario;
             font-size: 16px;
             font-weight: 400;
-            color: #fff;
+            color: map-get($colores, -blanco);
             text-transform: uppercase;
             }
                 
@@ -147,12 +147,12 @@ background-color: #b18c73;
         }
 
         .accordion-button{
-        font-family: 'Permanent Marker', cursive;
+        font-family: $font-secundario;
         text-transform: uppercase;
         font-size: 20px;
 
             &:not(.collapsed){
-            color: #7d7573!important;/* Utilice el important ya que si no lo pongo el color blanco me pisa el #7d7573*/
+            color: map-get($colores, color-secundario)!important;/* Utilice el important ya que si no lo pongo el color blanco me pisa el #7d7573*/
             font-weight: 700;  
             }
 
@@ -165,9 +165,9 @@ background-color: #b18c73;
         .accordion-body{
 
             p{
-            font-family: 'Shadows Into Light', cursive;
+            font-family: $font-general;
             font-size: 16px;
-            color: #fff;
+            color: map-get($colores, -blanco);
             text-align: start;
             font-weight: 500;
             }
@@ -177,16 +177,16 @@ background-color: #b18c73;
         .subtitle-acordion{
 
             h2{
-            font-family: 'Permanent Marker', cursive;
-            -webkit-text-stroke: 0.5px #fff;
+            font-family: $font-secundario;
+            -webkit-text-stroke: 0.5px map-get($colores, -blanco);
             font-size: 35px;
             text-align: center;
-            background-color: #7d7573;
+            background-color: map-get($colores, color-secundario);
             margin: 50px 0;
             margin-top: 200px;
             padding: 20px;
             border-radius: 10px;
-            color: #7d7573;
+            color: map-get($colores, color-secundario);
             }
        
         }
@@ -286,13 +286,42 @@ margin: 50px 20px;
 
 /* Mobile L */
 @media (max-width:500px){
-.accordion-button{
-font-size: 18px !important;/* Utilice el important ya que si no lo pongo el size de 20px me pisa los 18px*/
+.sobre-servicios{
+
+    .sobre-servicios-content{
+
+        .accordion-button{
+        font-size: 18px !important;/* Utilice el important ya que si no lo pongo el size de 20px me pisa los 18px*/
+        } 
+
+
+        .subtitle-acordion{
+
+            h2{
+            font-size: 25px;
+            padding: 20px 0;
+            }
+
+        }
+
+
+    }
+}
+}
+
+
+
+
+/* Mobile S */
+@media (max-width:340px){      
+.servicios-content{
+
+    .servicios-container{
+
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+
 } 
-
-
-.subtitle-acordion h2{
-font-size: 25px;
-padding: 20px 0;
-}
-}
