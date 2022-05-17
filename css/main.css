@@ -533,7 +533,7 @@ section {
     .servicios-container .servicios-items li {
       display: inline-block;
       list-style: none;
-      margin: 50px 100px; }
+      margin: 50px 50px; }
     .servicios-container .servicios-items .icon:hover i {
       background-color: #7d7573;
       color: #222;
@@ -613,6 +613,9 @@ section {
         font-weight: 400;
         color: #fff;
         text-transform: uppercase; }
+        .sobre-servicios .sobre-servicios-content .servicios-explicacion p a {
+          text-decoration: none;
+          color: #b18c73; }
     .sobre-servicios .sobre-servicios-content .accordion-button {
       font-family: "Permanent Marker", cursive;
       text-transform: uppercase;

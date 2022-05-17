@@ -22,7 +22,7 @@ background: map-get($colores, -gris);
             li{
             display: inline-block;
             list-style: none;
-            margin: 50px 100px;
+            margin: 50px 50px;
             }
 
             .icon{
@@ -141,6 +141,11 @@ background-color: map-get($colores, color-principal);
             font-weight: 400;
             color: map-get($colores, -blanco);
             text-transform: uppercase;
+
+                a{
+                text-decoration: none;
+                color: map-get($colores, color-principal);
+                }
             }
                 
 
