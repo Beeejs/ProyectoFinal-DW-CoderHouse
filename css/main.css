@@ -854,7 +854,7 @@ section {
         color: #7d7573; }
       .contacto .concato-conatiner .info-contacto p {
         font-family: "Permanent Marker", cursive;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 500;
         color: #fff; }
 
@@ -984,7 +984,7 @@ section {
     .contacto .concato-conatiner .info-contacto h4 {
       font-size: 25px; }
     .contacto .concato-conatiner .info-contacto p {
-      font-size: 20px; }
+      font-size: 18px; }
   .main-form .form-content .section-contacto h2 {
     margin: 50px 0;
     margin-bottom: 100px;
@@ -998,7 +998,7 @@ section {
 /* Mobile L */
 @media (max-width: 425px) {
   .contacto .concato-conatiner .info-contacto li {
-    margin: 50px 0px; } }
+    margin: 50px 10px; } }
 
 /* Mobile S */
 @media (max-width: 340px) {
