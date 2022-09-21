@@ -1,2 +1,2 @@
 # ProyectoFinal-DW-CoderHouse
-En este proyecto se utilizo ==> HTML , CSS , JS , SASS y BOOTSTRAP
+Como proyecto final hice una Pagina Web estática para un emprendimiento. En este proyecto se utilizó ==> HTML, CSS, JS, SASS y BOOTSTRAP
